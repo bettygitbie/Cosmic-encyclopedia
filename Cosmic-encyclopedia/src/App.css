@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+* {
+  background-color: black;
+  color: white;
+  font-family: monospace;
 }
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+body {
+  margin: 0;
+  padding: 20px;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+p {
+  margin: 20px 0;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Header layout nav*/
+header nav {
+  border: 1px solid white;
+  display: flex;
+  padding: 20px;
+  max-width: 1200px;
+  justify-content: space-between;
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header nav a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 4px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+header nav a:hover {
+  color: greenyellow;
 }
-
-.card {
-  padding: 2em;
+header nav a.active {
+  background-color: rgb(118, 146, 64);
 }
-
-.read-the-docs {
-  color: #888;
+/* Planets nav bar*/
+.planets nav {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin: 30px 0;
+}
+.planets nav a {
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 4px;
+}
+.planets nav a:hover {
+  color: greenyellow;
+}
+.planets nav a.active {
+  background-color: rgb(118, 146, 64);
+}
+.button {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 120px;
+  height: 40px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+}
+.button:hover {
+  color: greenyellow;
 }
